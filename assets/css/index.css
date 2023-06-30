@@ -12,130 +12,18 @@ body {
 }
 
 a {
+    /* a 태그의 밑줄 데코레이션을 없앤다 */
     text-decoration: none;
+    /* a 태그의 하늘색 글씨를 바꾼다 . */
     color: var(--text-color);
 }
 
 a:hover {
+    /* a 태그에 마우스를 올렸을 때, 글씨 색상을 지정해준다. */
     color: rgb(153, 152, 152);
 }
 
-/* 네비바 전체 CSS */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    background-color: var(--background-color);
-    padding: 8px 5%;
-}
-
-
-/* ======= 네비바 로고 / 네비바 메뉴 / 네비바 링크들 시작 ======= */
-
-.navbar__logo {
-    font-size: 24px;
-    color: var(--text-color);
-    /* 상하 마진을 같게해서, 위아래 중앙에 위치하도록 함 */
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: 'Hahmlet', serif;
-}
-
-.navbar__logo li {
-    color: var(--accent-color);
-}
-
-.navbar__menu {
-    /* 세로줄 column, 가로줄 flex */
-    display: flex;
-    /* li는 리스트 점이, 글 왼쪽에 존재하는데 그걸 없애줌 */
-    list-style: none;
-    /* 기본적으로 왼쪽 패딩이 존재함 ->없애야 중간으로 온다. */
-    padding-left: 0;
-    /* 상하 마진을 같게해서, 위아래 중앙에 위치하도록 함 */
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.navbar__menu li {
-    /* li들이 따닥 따닥 붙어있어서, 패딩으로 떨어뜨렸고,
-    패딩으로 넣어야, 박스 안의 크기가 커져서 hover를 했을 때 보기좋다 */
-    padding: 8px 12px;
-}
-
-.navbar__menu li:hover {
-    background-color: var(--background-color);
-    border-radius: 4px;
-}
-
-.navbar__icons {
-    /* 상하 마진을 같게해서, 위아래 중앙에 위치하도록 함 */
-    margin-top: 0;
-    margin-bottom: 0;
-
-    color: rgb(22, 21, 21);
-    display: flex;
-    padding-left: 0;
-    right: 0px;
-}
-
-/* 아이콘 하나하나, 사이사이 패딩을 줘서 떨어뜨림 */
-.navbar__icons li {
-    font-size: 23px;
-    padding: 8px 12px;
-}
-
-/* ======= 네비바 로고 / 네비바 메뉴 / 네비바 링크들 끝 ======= */
-
-.navbar__toogleBtn {
-    display: none;
-    position: absolute;
-    right: 32px;
-    font-size: 32px;
-    color: rgb(0, 0, 0);
-}
-
-/* ======= 창이 줄어들었을 때, 네비바를 세로로 정렬 시작 ======= */
-
-@media screen and (max-width:700px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 12px 24px;
-    }
-
-    .navbar__menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .navbar__menu li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar__icons {
-        display: none;
-        margin-top: 10px;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .navbar__toogleBtn {
-        display: block;
-    }
-
-    .navbar__icons.active,
-    .navbar__menu.active {
-        display: flex;
-    }
-
-}
-
-/* ======= 창이 줄어들었을 때, 네비바를 세로로 정렬 끝 ======= */
 
 
 .feedimg {
@@ -145,9 +33,106 @@ a:hover {
     background-size: cover;
 
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
     position: relative;
 
-    height: 500px;
+    height: 700px;
+}
+
+.season-introbox {
+    background: rgba(255, 255, 255, 0.6);
+
+    width: 40%;
+    height: 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.season-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.season-inputbox {
+    width: 23%;
+    height: 18%;
+
+    display: flex;
+    flex-direction: row;
+
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+#season-input {
+    padding: 2%;
+
+    width: 120px;
+    height: 35px;
+
+    border: 0px;
+    background-color: gray;
+    color: white;
+}
+
+#season-input:hover {
+    background-color: rgb(189, 189, 189);
+    color: rgb(0, 0, 0);
+}
+
+.product-intro-container {
+    display: block;
+    text-align: center;
+}
+
+.product-intro-title {
+    display: block;
+}
+
+.intro-name {
+    font-size: 13px;
+    display: inline-block;
+
+    width: 80px;
+    height: 20px;
+
+    background-color: gray;
+    text-align: center;
+
+    margin-bottom: 1%;
+}
+
+.product-container {
+    width: 96%;
+    height: 700px;
+
+    margin: 0% 0% 2% 0%;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    /* 가로 스크롤 */
+    overflow: auto;
+    white-space: pre-wrap;
+
+}
+
+.productcontainer::-webkit-scrollbar {
+    display: none;
+}
+
+.cardbox {
+    margin-left: 4%;
+}
+
+.card-img-top {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
 }

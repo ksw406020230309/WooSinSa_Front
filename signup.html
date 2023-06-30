@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&display=swap" rel="stylesheet">
+    <!-- My CSS -->
+    <link href="/assets/css/nav01.css" rel="stylesheet">
+    <link href="/assets/css/signup.css" rel="stylesheet">
+    <link href="/assets/css/footer.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e331472b8.js" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js" defer></script>
+</head>
+
+<body>
+    <!-- 상단 네비게이션바 시작-->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <li class="fa-brands fa-wikipedia-w">
+                <a href="./index.html">ooSinSa</a>
+            </li>
+        </div>
+        <ul class="navbar__menu">
+            <li>
+                <a href="./introduce.html">소개</a>
+            </li>
+            <li>
+                <a href="./tops.html">상의</a>
+            </li>
+            <li>
+                <a href="./bottom.html">하의</a>
+            </li>
+            <li>
+                <a href="./shoes.html">신발</a>
+            </li>
+            <li>
+                <a href="./customer_care.html">고객센터</a>
+            </li>
+        </ul>
+        <ul class="navbar__icons">
+            <li class="fa-regular fa-circle-user"><a class="login_btn" href="./login.html"></a></li>
+            <li class="fa-solid fa-cart-shopping"><a href="./cart.html"></a></li>
+        </ul>
+        <a href="#" class="navbar__toogleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+    <!-- 상단 네비게이션바 끝-->
+
+    <!-- 회원가입 시작-->
+    <div class="signup-container">
+        <div class="head">
+            회원가입
+        </div>
+        <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style5" />
+        <form id="signup-boxes">
+            <div class="inputcontainer">
+                <div class="inputbox">
+                    <p id="pleaseinfo">회원 정보를 입력해 주세요</p>
+                    <div class="signup-form">
+                        <label for="account">아이디 : </label>
+                        <input type="text" name="account" class="signup-input" id="signup-account"
+                            placeholder="아이디를 입력하세요">
+                    </div>
+                    <div class="signup-form">
+                        <label for="password1">비밀번호 :</label>
+                        <input type="password1" name="password1" class="signup-input" id="signup-password1"
+                            placeholder="새 비밀번호를 입력하세요">
+                    </div>
+                    <div class="signup-form">
+                        <label for="password2">비밀번호 확인 :</label>
+                        <input type="password2" name="password2" class="signup-input" id="signup-password2"
+                            placeholder="확인을 위해 비밀번호를 다시 입력하세요">
+                    </div>
+                    <div class="signup-form">
+                        <label for="username">이름 :</label>
+                        <input type="username" name="username" class="signup-input" id="signup-username"
+                            placeholder="사용자 이름을 입력하세요">
+                    </div>
+                    <div class="signup-form">
+                        <label for="phone">휴대전화 :</label>
+                        <input type="phone" name="phone" class="signup-input" id="signup-phone"
+                            placeholder="전화번호를 입력하세요">
+                    </div>
+                    <div class="signup-form">
+                        <label for="email">이메일 :</label>
+                        <input type="email" name="email" class="signup-input" id="signup-email"
+                            placeholder="이메일을 입력하세요">
+                    </div>
+                </div>
+                <div class="signup-btns">
+                    <div class="signupbtn">
+                        <button type="submit" class="signup-completebtn">취소하기</button>
+                    </div>
+                    <div class="signupbtn">
+                        <button type="submit" class="signup-completebtn">가입완료</button>
+                    </div>
+                </div>
+            </div>
+            <div class="findIDPW">
+                <a href="findid.html" class="findID">아이디 찾기</a>
+                <i class="fa-solid fa-grip-lines-vertical"></i>
+                <a href="findpw.html" class="findPW">비밀번호 찾기</a>
+            </div>
+        </form>
+    </div>
+    <hr contenteditable="false" data-ke-type="horizontalRule" style="color: gray;" />
+
+    <div class="signup-container">
+        <p id="signup-title">이미 WooSinSa의 회원이신가요?</p>
+        <a href="./login.html">
+            <h5>로그인 페이지로 이동</h5>
+        </a>
+    </div>
+
+    <hr contenteditable="false" data-ke-type="horizontalRule" style="color: gray;" />
+
+
+    <!-- 하단 푸터 시작-->
+    <div class="footer-container">
+        <div class="maincontainer">
+            <div class="ft-item" id="ft-top">
+                <a href="#" class="ft-top-link">홈</a><a href="#" class="ft-top-link">회사소개</a><a href="#"
+                    class="ft-top-link">이용약관</a><a href="#" class="ft-top-link">개인정보방침</a>
+            </div>
+            <div class="ft-item" id="ft-middle">
+                <l>WooSinSa</l>
+                <l id="customer-title">CUSTOMER CENTER</l>
+                <l class="customer-content">1588-0000</l>
+                <l class="customer-content">평일 09:00~17:00/ 점심13:00-14:00 (토,일 공휴일 휴무)</l>
+            </div>
+            <div class="if-item" id="ft-bottom">
+                <l class="info-title">상호명</l>
+                <l class="info-content">WooSinSa</l>
+                <l class="info-title">대표자</l>
+                <l class="info-content">김성우</l>
+                <l class="info-title">휴대폰</l>
+                <l class="info-content">01052624060</l>
+                <l class="info-title">본사주소</l>
+                <l class="info-content">서울특별시 강남구 강남대로 324-2(역삼동)</l>
+                <l class="info-title">개인정보보호책임자</l>
+                <l class="info-content">popk030j(gokorea1214@kakao.com)</l>
+                <p class="info-content">* WooSinSa에서 제공하는 모든 컨텐츠는 저작권법에 보호받는 저작물로서, 무단으로 복제, 배포하는 경우에는 저작권법에 의하여 처벌을 받을수
+                    있습니다.</p>
+            </div>
+        </div>
+        <hr contenteditable="false" data-ke-type="horizontalRule" style="color: rgb(0, 0, 0);" />
+        <div class="subcontainer">
+            <l class="info-content">Copyright@ 2023 WooSinsa. All rights reserved</l>
+        </div>
+    </div>
+    <!-- 하단 푸터 끝-->
+</body>
+
+</html>

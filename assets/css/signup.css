@@ -1,0 +1,98 @@
+:root {
+    --text-color: rgb(0, 0, 0);
+    --background-color: rgb(255, 255, 255);
+    --accent-color: rgb(132, 100, 3);
+}
+
+
+body {
+    margin: 0;
+    /* 구글 폰트 Hahmlet적용 */
+    font-family: 'Hahmlet', serif;
+}
+
+a {
+    /* a 태그의 밑줄 데코레이션을 없앤다 */
+    text-decoration: none;
+    /* a 태그의 하늘색 글씨를 바꾼다 . */
+}
+
+/* 전체 영역 */
+.signup-container {
+    text-align: center;
+}
+
+#signup-boxes {
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.head {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+#pleaseinfo {
+    margin-bottom: 5%;
+}
+
+.signup-form {
+    height: 4vh;
+    text-align: center;
+
+    margin-top: 2%;
+
+    font-size: 14px;
+}
+
+.signup-input {
+    width: 27vh;
+
+    font-size: 13px;
+}
+
+
+.signup-completebtn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    border-radius: 8px;
+    height: 4vh;
+    width: 10vh;
+
+    font-size: 12px;
+
+}
+
+.signup-completebtn:hover {
+    background-color: gray;
+    color: white;
+}
+
+.signup-btns {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 3%;
+}
+
+.signupbtn {
+    margin-right: 2%;
+    margin-bottom: 3%;
+}
+
+#login-signupbtn {
+    background-color: rgb(61, 90, 177);
+
+    height: 10%;
+    width: 50%;
+
+    font-size: 15x;
+}
+
+#login-signupbtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 0, 0);
+}

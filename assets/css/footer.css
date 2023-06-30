@@ -1,0 +1,55 @@
+.footer-container {
+    background-color: rgb(168, 168, 168);
+    height: 400px;
+}
+
+.maincontainer {
+    display: block;
+
+    margin: 0% 4% 2% 4%;
+    padding-top: 2%;
+
+    height: 230px;
+}
+
+.ft-item {
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.ft-top-link {
+    margin-right: 2%;
+}
+
+#ft-top {
+    font-size: 13px;
+}
+
+#customer-title {
+    font-size: 12px;
+    margin-left: 2%;
+}
+
+.customer-content {
+    font-size: 11px;
+    margin-left: 1%;
+}
+
+.info-title {
+    color: gray;
+    font-size: 11px;
+
+    margin-left: 1%;
+}
+
+.info-content {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+
+    margin-left: 1%;
+}
+
+.subcontainer {
+    margin: 5%;
+}

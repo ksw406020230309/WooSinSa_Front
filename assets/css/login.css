@@ -1,0 +1,101 @@
+/* 로그인 페이지 헤드 : 로그인 */
+.head {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 9%;
+    margin-bottom: 5%;
+}
+
+/* 로그인 입력값 컨테이너 */
+.inputcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* 입력값들에 대한 폼태그 */
+#login-boxes {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* 계정, 비밀번호 전체 박스 */
+.inputbox {
+    flex-basis: 35%;
+}
+
+/* 계정, 비밀번호 두 박스를 한꺼번에 속성 짓는 클래스 */
+.login-form {
+    font-size: 17px;
+    margin-bottom: 8%;
+}
+
+.login {
+
+    height: 80px;
+    width: 150px;
+}
+
+
+/* 오른쪽에 있는 로그인 버튼 속성*/
+.btn {
+    height: 110px;
+    width: 130px;
+
+    background-color: gray;
+
+    font-size: 15px;
+}
+
+/* 아이디 , 비밀번호 찾기 링크 속성 */
+.findIDPW {
+    text-align: center;
+}
+
+/* 로그인 버튼 호버링 */
+.btn:hover {
+    background-color: rgb(79, 77, 77);
+}
+
+.sns-login {
+    text-align: center;
+    font-size: 30px;
+}
+
+.login-input {
+    background-color: rgb(228, 227, 227);
+    border: 0px solid rgb(255, 255, 255);
+
+    width: 300px;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.signup-container {
+    text-align: center;
+}
+
+#signup-title {
+    font-size: 15px;
+}
+
+#signup-content {
+    font-size: 13px;
+}
+
+#login-signupbtn {
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+
+    color: rgb(0, 0, 0);
+
+    width: 100px;
+    height: 30px;
+}
+
+#login-signupbtn:hover {
+    background-color: gray;
+    color: white;
+}
